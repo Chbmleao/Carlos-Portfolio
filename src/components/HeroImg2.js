@@ -6,7 +6,7 @@ import HeroImg from "../assets/hero-bg2.jpg";
 class HeroImg2 extends Component {
   render() {
     return (
-      <div className="hero">
+      <div className="hero2">
         <div className="mask">
           <img className="hero-img" src={HeroImg} alt="HeroImg"></img>
         </div>

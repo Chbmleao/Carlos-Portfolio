@@ -1,15 +1,15 @@
-.hero {
+.hero2 {
   height: 100%;
   width: 100%;
 }
 
-.mask {
+.hero2 .mask {
   width: 100%;
   height: 60vh;
   position: relative;
 }
 
-.mask::after {
+.hero2 .mask::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -20,7 +20,7 @@
   opacity: 0.6;
 }
 
-.hero-img {
+.hero2 .hero-img {
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -28,7 +28,7 @@
   object-fit: cover;
 }
 
-.heading {
+.hero2 .heading {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 30%;
@@ -43,10 +43,10 @@
   text-shadow: 4px 4px 4px black;
 }
 
-.heading h1 {
+.hero2 .heading h1 {
   font-size: 2.8rem;
 }
 
-.heading p {
+.hero2 .heading p {
   font-size: 1.5rem;
 }
