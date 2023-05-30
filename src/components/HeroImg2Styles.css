@@ -1,0 +1,52 @@
+.hero {
+  height: 100%;
+  width: 100%;
+}
+
+.mask {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+}
+
+.mask::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(42, 47, 79);
+  opacity: 0.6;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.heading {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 50%;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 4px 4px 4px black;
+}
+
+.heading h1 {
+  font-size: 2.8rem;
+}
+
+.heading p {
+  font-size: 1.5rem;
+}
