@@ -4,12 +4,12 @@
 }
 
 .project-container {
-  max-width: 1140px;
+  max-width: 1440px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
-  padding-bottom: 5rem;
+  padding: 1rem 0 1rem 5rem;
 }
 
 .project-card {
