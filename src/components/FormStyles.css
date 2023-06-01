@@ -12,8 +12,7 @@
   margin-bottom: 0.5rem;
 }
 
-.form input,
-.form textarea {
+.form .text-box {
   padding: 10px 24px;
   margin-bottom: 1.2rem;
   background-color: rgba(0, 0, 0, 0.6);
