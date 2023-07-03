@@ -1,0 +1,26 @@
+.aboutme-container {
+  width: 75vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: justify;
+}
+
+.aboutme-container div {
+  padding: 2rem;
+}
+
+.aboutme-container h1,
+.aboutme-container h2 {
+  color: #e5beec;
+}
+
+.aboutme-container h2 {
+  padding-bottom: 2rem;
+}
+
+.aboutme-container p {
+  padding-bottom: 1rem;
+}
