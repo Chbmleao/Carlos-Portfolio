@@ -8,9 +8,12 @@ class ScrollButton extends React.Component {
   }
 
   render() {
-    const { sectionId, sectionName } = this.props;
+    const { sectionId, sectionName, buttonType } = this.props;
     return (
-      <button onClick={() => this.scrollToSection(sectionId)}>
+      <button
+        className={buttonType}
+        onClick={() => this.scrollToSection(sectionId)}
+      >
         {sectionName}
       </button>
     );
