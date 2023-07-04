@@ -1,7 +1,7 @@
 import "./HeroImgStyles.css";
 import React from "react";
 import IntroImg from "../assets/hero-bg.jpg";
-import { Link } from "react-router-dom";
+import ScrollButton from "./ScrollButton";
 
 const HeroImg = () => {
   return (
@@ -13,12 +13,16 @@ const HeroImg = () => {
         <p>OLÁ, ME CHAMO CARLOS LEÃO</p>
         <h1>Desenvolvedor</h1>
         <div>
-          <Link to="/project" className="btn">
-            PROJETOS
-          </Link>
-          <Link to="/contact" className="btn btn-light">
-            CONTATO
-          </Link>
+          <ScrollButton
+            buttonType="btn"
+            sectionId="project"
+            sectionName="PROJETOS"
+          />
+          <ScrollButton
+            buttonType="btn btn-light"
+            sectionId="contact"
+            sectionName="CONTATO"
+          />
         </div>
       </div>
     </div>
