@@ -122,61 +122,6 @@ const Timeline = () => {
         </div>
       </div>
     </div>
-
-    // <div className="timeline-container">
-    //   <div className=""></div>
-    //   <div className="line"></div>
-    //   <div className="point"></div>
-    //   <div className="point"></div>
-    //   <div className="point"></div>
-    //   <div className="point"></div>
-    //   <div className="experience-content">
-    //     <div className="experience-container">
-    //       <h1>2020</h1>
-    //       <p>
-    //         Em 2020 me formei no ensino médio no Colégio Espanhol Santa Maria.
-    //         Além disso, durante o meu tempo livre iniciei meus estudos na área
-    //         de programação, principalmente relacionados à lógica de programação,
-    //         HTML, CSS e JavaScript. Participei de um curso, juntamente com uma
-    //         competição de criação de sites, ofertado pela Microsoft juntamente
-    //         com a Junior Achievement, em que cheguei até a fase estadual.
-    //       </p>
-    //     </div>
-    //     <div className="experience-container">
-    //       <h1>2020</h1>
-    //       <p>
-    //         Em 2020 me formei no ensino médio no Colégio Espanhol Santa Maria.
-    //         Além disso, durante o meu tempo livre iniciei meus estudos na área
-    //         de programação, principalmente relacionados à lógica de programação,
-    //         HTML, CSS e JavaScript. Participei de um curso, juntamente com uma
-    //         competição de criação de sites, ofertado pela Microsoft juntamente
-    //         com a Junior Achievement, em que cheguei até a fase estadual.
-    //       </p>
-    //     </div>
-    //     <div className="experience-container">
-    //       <h1>2020</h1>
-    //       <p>
-    //         Em 2020 me formei no ensino médio no Colégio Espanhol Santa Maria.
-    //         Além disso, durante o meu tempo livre iniciei meus estudos na área
-    //         de programação, principalmente relacionados à lógica de programação,
-    //         HTML, CSS e JavaScript. Participei de um curso, juntamente com uma
-    //         competição de criação de sites, ofertado pela Microsoft juntamente
-    //         com a Junior Achievement, em que cheguei até a fase estadual.
-    //       </p>
-    //     </div>
-    //     <div className="experience-container">
-    //       <h1>2020</h1>
-    //       <p>
-    //         Em 2020 me formei no ensino médio no Colégio Espanhol Santa Maria.
-    //         Além disso, durante o meu tempo livre iniciei meus estudos na área
-    //         de programação, principalmente relacionados à lógica de programação,
-    //         HTML, CSS e JavaScript. Participei de um curso, juntamente com uma
-    //         competição de criação de sites, ofertado pela Microsoft juntamente
-    //         com a Junior Achievement, em que cheguei até a fase estadual.
-    //       </p>
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 
