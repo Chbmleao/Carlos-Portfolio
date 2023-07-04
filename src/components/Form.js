@@ -50,7 +50,7 @@ class Form extends Component {
 
   render() {
     return (
-      <div className="form">
+      <div className="form" id="contact">
         <form ref={this.formRef} onSubmit={this.sendEmail}>
           <label>Seu nome</label>
           <input
