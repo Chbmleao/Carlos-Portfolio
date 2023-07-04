@@ -51,6 +51,7 @@ class Form extends Component {
   render() {
     return (
       <div className="form" id="contact">
+        <h1>Envie uma mensagem para mim!</h1>
         <form ref={this.formRef} onSubmit={this.sendEmail}>
           <label>Seu nome</label>
           <input

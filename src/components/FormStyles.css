@@ -26,3 +26,8 @@
 .form textarea {
   margin-bottom: 1.8rem;
 }
+
+.form h1 {
+  text-align: center;
+  padding: 4rem 0 0 0;
+}
