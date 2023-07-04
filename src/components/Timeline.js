@@ -4,7 +4,7 @@ import React from "react";
 
 const Timeline = () => {
   return (
-    <div className="timeline">
+    <div className="timeline" id="timeline">
       <div className="timeline-component">
         <div className="timeline-date timeline-date-right">
           12 de Julho, 2020
