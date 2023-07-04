@@ -5,7 +5,7 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="aboutme">
+    <div className="aboutme" id="aboutme">
       <div className="aboutme-container">
         <div className="aboutme-img">
           <img src={imgsrc}></img>
