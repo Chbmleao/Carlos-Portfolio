@@ -38,15 +38,15 @@ const Navbar = () => {
         </li>
         <li>
           <ScrollButton
-            sectionId="project"
-            sectionName="Projetos"
+            sectionId="timeline"
+            sectionName="Experiência"
             buttonType="navbar"
           />
         </li>
         <li>
           <ScrollButton
-            sectionId="timeline"
-            sectionName="Experiência"
+            sectionId="project"
+            sectionName="Projetos"
             buttonType="navbar"
           />
         </li>
