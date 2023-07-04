@@ -5,21 +5,34 @@ import React from "react";
 
 const WorkCard = (props) => {
   return (
-    <div className="project-card">
-      <img src={props.imgsrc} alt="" />
-      <h2 className="project-title">{props.title}</h2>
-      <div className="project-details">
-        <p>{props.text}</p>
-        <div className="project-buttons">
-          <NavLink to={props.view} className="btn" target="_blank">
-            View
-          </NavLink>
-          <NavLink to={props.source} className="btn" target="_blank">
-            Source
+    <article>
+      <div className="project-card">
+        <figure>
+          <img src={props.imgsrc} alt="" />
+        </figure>
+        <div className="card-body">
+          <div>
+            <h2>{props.title}</h2>
+            <p>{props.text}</p>
+          </div>
+          <NavLink to={props.source} className="read-more" target="_blank">
+            Veja mais
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
           </NavLink>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 

@@ -1,6 +1,5 @@
 .work-container {
   background-color: rgba(0, 0, 0, 0.7);
-  color: white;
 }
 
 .project-heading {
@@ -18,36 +17,90 @@
 }
 
 .project-card {
-  background-color: transparent;
-  padding: 1.2rem 1rem;
-  box-shadow: rgba(229, 190, 236, 0.35) 0px 5px 15px;
-  border-color: #fde2f3;
-  border-radius: 6px;
+  --img-scale: 1.001;
+  --title-color: black;
+  --link-icon-translate: -20px;
+  --link-icon-opacity: 0;
+  height: 100%;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: none;
+  background: #fff;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+.project-card a::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  cursor: pointer;
+  content: "";
+}
+
+/* basic .project-card elements styling */
+.project-card h2 {
+  margin: 0 0 18px 0;
+  font-size: 1.9rem;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  transition: color 0.3s ease-out;
+}
+
+.project-card p {
+  color: black;
+  text-align: justify;
+}
+
+figure {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.project-card img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+
+.card-body {
+  padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.project-card img {
-  width: 100%;
+.project-card a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #917fb3;
 }
 
-.project-title {
-  padding: 1rem 0;
+.project-card a:focus {
+  outline: 1px dotted #917fb3;
 }
 
-.project-details p {
-  padding-bottom: 1rem;
-  font-size: 1.1rem;
-  text-align: justify;
+.project-card a .icon {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  transform: translateX(var(--link-icon-translate));
+  opacity: var(--link-icon-opacity);
+  transition: all 0.3s;
 }
 
-.project-buttons {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem 0;
-}
-
-.project-buttons .btn {
-  padding: 0.5rem 1rem;
+.project-card:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --title-color: #917fb3;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
