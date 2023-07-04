@@ -23,16 +23,39 @@ const Navbar = () => {
       </Link>
       <ul className="nav-menu">
         <li>
-          <ScrollButton sectionId="home" sectionName="Home" />
+          <ScrollButton
+            sectionId="home"
+            sectionName="Home"
+            buttonType="navbar"
+          />
         </li>
         <li>
-          <ScrollButton sectionId="project" sectionName="Projetos" />
+          <ScrollButton
+            sectionId="aboutme"
+            sectionName="Sobre"
+            buttonType="navbar"
+          />
         </li>
         <li>
-          <ScrollButton sectionId="aboutme" sectionName="Sobre" />
+          <ScrollButton
+            sectionId="project"
+            sectionName="Projetos"
+            buttonType="navbar"
+          />
         </li>
         <li>
-          <ScrollButton sectionId="contact" sectionName="Contato" />
+          <ScrollButton
+            sectionId="timeline"
+            sectionName="Experiência"
+            buttonType="navbar"
+          />
+        </li>
+        <li>
+          <ScrollButton
+            sectionId="contact"
+            sectionName="Contato"
+            buttonType="navbar"
+          />
         </li>
       </ul>
     </div>
