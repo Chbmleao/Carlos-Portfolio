@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./NavbarStyles.css";
 
 import React, { useState } from "react";
+import ScrollButton from "./ScrollButton";
 
 const Navbar = () => {
   const [color, setColor] = useState(false);
@@ -22,16 +23,16 @@ const Navbar = () => {
       </Link>
       <ul className="nav-menu">
         <li>
-          <Link to="/">Home</Link>
+          <ScrollButton sectionId="home" sectionName="Home" />
         </li>
         <li>
-          <Link to="/project">Projetos</Link>
+          <ScrollButton sectionId="project" sectionName="Projetos" />
         </li>
         <li>
-          <Link to="/about">Sobre</Link>
+          <ScrollButton sectionId="aboutme" sectionName="Sobre" />
         </li>
         <li>
-          <Link to="/contact">Contato</Link>
+          <ScrollButton sectionId="contact" sectionName="Contato" />
         </li>
       </ul>
     </div>
