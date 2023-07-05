@@ -4,7 +4,13 @@ import "./NavbarStyles.css";
 import React, { useState } from "react";
 import ScrollButton from "./ScrollButton";
 
+import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
+
 const Navbar = () => {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+
   const [color, setColor] = useState(false);
   const changeColor = () => {
     if (window.scrollY >= 100) {
@@ -21,7 +27,7 @@ const Navbar = () => {
       <Link to="/">
         <img src="logo.png" alt="Carlos Leão logo" className="logo" />
       </Link>
-      <ul className="nav-menu">
+      <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
           <ScrollButton
             sectionId="home"
@@ -58,6 +64,13 @@ const Navbar = () => {
           />
         </li>
       </ul>
+      <div className="menu-icon" onClick={handleClick}>
+        {click ? (
+          <AiOutlineClose size={30} style={{ color: "#fff" }} />
+        ) : (
+          <AiOutlineMenu size={30} style={{ color: "#fff" }} />
+        )}
+      </div>
     </div>
   );
 };
