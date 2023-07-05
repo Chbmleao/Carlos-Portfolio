@@ -10,7 +10,6 @@
   display: grid;
   grid-template-columns: 1fr 3px 1fr;
   color: white;
-  text-align: justify;
   margin-bottom: 4rem;
 }
 
