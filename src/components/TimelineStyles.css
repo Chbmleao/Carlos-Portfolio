@@ -1,11 +1,17 @@
+.timeline {
+  width: 100vw;
+  max-width: 100vw;
+}
+
 .timeline-head h1 {
+  max-width: 100vw;
   text-align: center;
   padding: 4rem 0;
 }
 
 .timeline-body {
   margin: 0 auto;
-  max-width: 750px;
+  max-width: 100vw;
   padding: 25px;
   display: grid;
   grid-template-columns: 1fr 3px 1fr;
@@ -71,4 +77,50 @@
 .timeline-paragraph {
   line-height: 1.5;
   font-size: 1em;
+}
+
+@media screen and (max-width: 800px) {
+  .timeline-head h1 {
+    padding: 2rem 0;
+  }
+
+  .timeline-middle {
+    position: relative;
+    top: 0;
+    left: -65vw;
+  }
+
+  .timeline-date-left,
+  .timeline-date-right {
+    position: absolute;
+    left: 20vw;
+  }
+
+  .timeline-body {
+    position: relative;
+  }
+
+  .date-component {
+    width: 0;
+  }
+
+  .timeline-component-bg {
+    width: 60vw;
+    font-size: 0.8rem;
+    position: relative;
+    top: 10%;
+    margin-bottom: 6rem;
+  }
+
+  .component-right {
+    left: -90%;
+  }
+
+  .component-left {
+    left: 10%;
+  }
+
+  .timeline-component-bottom {
+    margin-bottom: 15%;
+  }
 }
