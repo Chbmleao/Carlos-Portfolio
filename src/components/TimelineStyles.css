@@ -11,7 +11,7 @@
 
 .timeline-body {
   margin: 0 auto;
-  max-width: 100vw;
+  max-width: 750px;
   padding: 25px;
   display: grid;
   grid-template-columns: 1fr 3px 1fr;
