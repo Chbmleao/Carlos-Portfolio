@@ -70,13 +70,13 @@
 
 .timeline-title {
   margin: 0;
-  font-size: 1.15em;
+  font-size: 1.15rem;
   font-weight: bold;
 }
 
 .timeline-paragraph {
   line-height: 1.5;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 800px) {
