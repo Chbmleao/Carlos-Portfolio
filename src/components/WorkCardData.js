@@ -19,7 +19,7 @@ const ProjectCardData = [
   {
     imgsrc: project4,
     title: "Pathfinding Visualizer",
-    text: "Este projeto fornece uma interface para visualizar a funcionalidade de vários algoritmos de caminhamento em grafos. Um algoritmo de busca de caminho é construído com base em um algoritmo de busca de grafo e explora rotas entre nós, começando em um nó e percorrendo relacionamentos até que o destino seja alcançado, como os algoritmos DFS, BFS e Dijkstra",
+    text: "Este projeto fornece uma interface para visualizar a funcionalidade de vários algoritmos de caminhamento em grafos. Um algoritmo de busca de caminho é construído com base em um algoritmo de busca de grafo e explora rotas entre nós, começando em um nó e percorrendo relacionamentos até que o destino seja alcançado. O projeto foi desenvolvido em React e contém os algoritmos DFS, BFS e Dijkstra.",
     source: "https://pathfinding-visualizer-carlosleao.vercel.app/",
   },
   {
