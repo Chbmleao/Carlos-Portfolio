@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import "./WorkCardStyles.css";
+import "../styles/WorkCardStyles.css";
 
 import React from "react";
 

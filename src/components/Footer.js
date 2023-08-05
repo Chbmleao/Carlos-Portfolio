@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./FooterStyles.css";
+import "../styles/FooterStyles.css";
 import React from "react";
 import {
   FaGithub,

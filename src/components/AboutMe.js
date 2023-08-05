@@ -1,4 +1,4 @@
-import "./AboutMeStyles.css";
+import "../styles/AboutMeStyles.css";
 import imgsrc from "./../assets/carlos.png";
 
 import React from "react";

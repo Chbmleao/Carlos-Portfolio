@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { AiOutlineCheck } from "react-icons/ai";
-import "./PopupStyles.css";
+import "../styles/PopupStyles.css";
 
 class Popup extends Component {
   state = {

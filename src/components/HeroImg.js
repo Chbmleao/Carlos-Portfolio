@@ -1,4 +1,4 @@
-import "./HeroImgStyles.css";
+import "../styles/HeroImgStyles.css";
 import React from "react";
 import IntroImg from "../assets/hero-bg.jpg";
 import ScrollButton from "./ScrollButton";

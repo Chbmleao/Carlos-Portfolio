@@ -1,4 +1,4 @@
-import "./TimelineStyles.css";
+import "../styles/TimelineStyles.css";
 
 import React from "react";
 

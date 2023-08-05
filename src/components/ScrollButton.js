@@ -1,5 +1,5 @@
 import React from "react";
-import "./ScrollButtonStyles.css";
+import "../styles/ScrollButtonStyles.css";
 
 class ScrollButton extends React.Component {
   scrollToSection(sectionId) {

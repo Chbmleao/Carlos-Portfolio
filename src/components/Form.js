@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./FormStyles.css";
+import "../styles/FormStyles.css";
 import emailjs from "@emailjs/browser";
 import Popup from "./Popup";
 

@@ -9,6 +9,7 @@
 
 body {
   background: #2a2f4f;
+  max-width: 100vw;
 }
 
 h1,
