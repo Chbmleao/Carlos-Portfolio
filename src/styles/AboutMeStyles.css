@@ -10,14 +10,14 @@
 }
 
 .aboutme-img {
-  width: 25vw;
+  width: 20vw;
   display: flex;
   align-items: center;
 }
 
 .aboutme-text {
-  padding-left: 1.5rem;
-  width: 55vw;
+  padding-left: 3rem;
+  width: 60vw;
 }
 
 .aboutme-container h1 {
