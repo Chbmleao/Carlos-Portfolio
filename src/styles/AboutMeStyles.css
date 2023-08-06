@@ -48,11 +48,12 @@
     height: 40vh;
     width: 70vw;
     margin-top: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
 
   .aboutme-text {
     width: 80vw;
+    padding: 0;
   }
 
   .aboutme-img img {
