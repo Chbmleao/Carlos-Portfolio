@@ -9,6 +9,9 @@
 .flip-card img {
   width: 100%;
   height: auto;
+  border-radius: 20px;
+  border: 2px solid #e5beec;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.7);
 }
 
 .flip-card-inner {
