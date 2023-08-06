@@ -1,14 +1,16 @@
 import "../styles/AboutMeStyles.css";
-import imgsrc from "./../assets/carlos.png";
+import imgsrc1 from "./../assets/carlos1.jpg";
+import imgsrc2 from "./../assets/carlos2.png";
 
 import React from "react";
+import FlipCard from "./FlipCard";
 
 const AboutMe = () => {
   return (
     <div className="aboutme" id="aboutme">
       <div className="aboutme-container">
         <div className="aboutme-img">
-          <img src={imgsrc}></img>
+          <FlipCard imgsrc1={imgsrc1} imgsrc2={imgsrc2} />
         </div>
         <div className="aboutme-text">
           <h1>Olá!</h1>
