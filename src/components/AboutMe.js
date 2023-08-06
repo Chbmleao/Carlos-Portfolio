@@ -16,7 +16,7 @@ const AboutMe = () => {
           <h1>Olá!</h1>
           <h2>Meu nome é Carlos Leão</h2>
           <p>
-            Estou no quinto período de graduação em Sistemas de Informação pela
+            Estou no sexto período de graduação em Sistemas de Informação pela
             Universidade Federal de Minas Gerais (UFMG). Já participei do
             desenvolvimento de um software completo chamado Acad Game, uma
             plataforma gameficada que visa engajar mais ao processo de
