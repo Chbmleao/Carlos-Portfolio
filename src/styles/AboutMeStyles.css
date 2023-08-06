@@ -3,20 +3,21 @@
 }
 
 .aboutme-container {
-  width: 75vw;
+  width: 80vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin: auto;
   padding: 6rem 0;
 }
 
 .aboutme-img {
-  padding-right: 1.5rem;
+  width: 25vw;
+  display: flex;
+  align-items: center;
 }
 
 .aboutme-text {
   padding-left: 1.5rem;
+  width: 55vw;
 }
 
 .aboutme-container h1 {
@@ -39,12 +40,19 @@
   .aboutme-container {
     flex-direction: column;
     padding: 0;
+    align-items: center;
+    justify-content: center;
   }
 
   .aboutme-img {
     height: 40vh;
+    width: 70vw;
     margin-top: 3rem;
     margin-bottom: 1rem;
+  }
+
+  .aboutme-text {
+    width: 80vw;
   }
 
   .aboutme-img img {
