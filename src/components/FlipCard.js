@@ -6,10 +6,10 @@ const FlipCard = ({ imgsrc1, imgsrc2 }) => {
     <div className="flip-card">
       <div className="flip-card-inner">
         <div className="flip-card-front">
-          <img src={imgsrc1}></img>
+          <img src={imgsrc1} alt="It's me smiling"></img>
         </div>
         <div className="flip-card-back">
-          <img src={imgsrc2}></img>
+          <img src={imgsrc2} alt="It's me with sunglasses"></img>
         </div>
       </div>
     </div>
