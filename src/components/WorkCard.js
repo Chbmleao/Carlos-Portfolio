@@ -3,7 +3,11 @@ import "../styles/WorkCardStyles.css";
 
 import React from "react";
 
+import { useTranslation } from "react-i18next";
+
 const WorkCard = (props) => {
+  const { t } = useTranslation();
+
   return (
     <article>
       <div className="project-card">
@@ -16,7 +20,7 @@ const WorkCard = (props) => {
             <p>{props.text}</p>
           </div>
           <NavLink to={props.source} className="read-more" target="_blank">
-            Veja mais
+            {t("work.more")}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon"
