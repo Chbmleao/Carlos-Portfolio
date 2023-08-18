@@ -5,5 +5,18 @@
     "timeline": "Experiência",
     "project": "Projetos",
     "contact": "Contato"
+  },
+  "home": {
+    "words": {
+      "front": "Front-end",
+      "back": "Back-end",
+      "data": "Banco de dados",
+      "dev": "Desenvolvedor"
+    },
+    "content": {
+      "p": "OLÁ, ME CHAMO CARLOS LEÃO",
+      "project": "PROJETOS",
+      "contact": "CONTATO"
+    }
   }
 }
