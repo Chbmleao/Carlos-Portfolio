@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import { Us, Br } from "react-flags-select";
 import "../styles/LanguageSelectorStyles.css";
+import { useTranslation } from "react-i18next";
 
 const LanguageSelector = () => {
   const [isPtSelected, setIsPtSelected] = useState(true);
+  const { i18n } = useTranslation();
 
   const handleChangeLanguage = (lang) => {
     if (lang === "en") setIsPtSelected(false);
-
     if (lang === "pt") setIsPtSelected(true);
+
+    i18n.changeLanguage(lang);
   };
 
   return (
@@ -17,14 +19,14 @@ const LanguageSelector = () => {
         className={"en checkbox " + (!isPtSelected ? "selected" : "")}
         onClick={() => handleChangeLanguage("en")}
       >
-        <img src="https://flagcdn.com/us.svg" />
+        <img src="https://flagcdn.com/us.svg" alt="English" />
         <p>EN</p>
       </li>
       <li
         className={"pt checkbox " + (isPtSelected ? "selected" : "")}
         onClick={() => handleChangeLanguage("pt")}
       >
-        <img src="https://flagcdn.com/br.svg" />
+        <img src="https://flagcdn.com/br.svg" alt="Portuguese" />
         <p>PT</p>
       </li>
     </div>
