@@ -57,5 +57,24 @@
       "h2": "Acad Game 💪",
       "p": "In 2022, I participated in the development of the Acad Game software. Acad Game is a gamified platform aimed at engaging people more in the process of going to the gym and making progress. I had the opportunity to be involved from the project's ideation to its development and testing. I mainly worked on the back-end in JavaScript and the MySQL database. More details about this software can be found on the projects page."
     }
+  },
+  "work": {
+    "h1": "My Projects",
+    "workData1": {
+      "title": "Sorting Algorithms Visualizer",
+      "text": "A visualizer developed in Python for various sorting algorithms. Some of the available algorithms include: Selection sort, Insertion sort, Bubble sort, Quick sort, Merge Sort, and Heap Sort. The application also allows changing the sorting order between ascending or descending, as well as adjusting the list size and sorting speed."
+    },
+    "workData2": {
+      "title": "Acad Game",
+      "text": "Acad Game is a gamified platform aimed at gym-goers, encouraging competition, progress sharing, and continuous improvement through achievement incentives. The application is developed in JavaScript and TypeScript, following a Hexagonal Architecture detailed in the documentation on the Github repository. It was developed by five UFMG students."
+    },
+    "workData3": {
+      "title": "Final Fantasy Remake",
+      "text": "A game developed in C using the Allegro game development library, created during my first encounter with the language in the first semester of 2021. The game draws inspiration from RPG games, especially Final Fantasy and Pokemon. The project also includes explanatory documentation for the developed code."
+    },
+    "workData4": {
+      "title": "Pathfinding Visualizer",
+      "text": "This project provides an interface to visualize the functionality of various pathfinding algorithms on graphs. A pathfinding algorithm is constructed based on a graph search algorithm and explores routes between nodes, starting from a node and traversing relationships until the destination is reached. The project was developed in React and includes the DFS, BFS, and Dijkstra algorithms."
+    }
   }
 }
