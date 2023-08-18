@@ -24,5 +24,38 @@
     "h2": "My name is Carlos Leão",
     "p1": "I am in the sixth semester of my Computer Science degree at the Federal University of Minas Gerais (UFMG). I have already participated in the development of a complete software called Acad Game, a gamified platform that aims to engage people more in the process of going to the gym and making progress. During this experience, I gained knowledge about teamwork, communication, back-end and front-end development, JavaScript, MySQL, testability, as well as independence and a willingness to learn new technologies and processes.",
     "p2": "Additionally, I am involved in a scientific research project where I work with geolocation of addresses and places. We have developed functions to access and query textual identification data of places using cataloged addresses and names. For the creation and structuring of the database, we use PostgreSQL. Furthermore, Python and JavaScript are the languages used for developing the search interface."
+  },
+  "timeline": {
+    "h1": "My Timeline",
+    "component1": {
+      "date": "July 12, 2020",
+      "h2": "Startup in School",
+      "p": "I completed an innovation and entrepreneurship course with technology offered by Google. During the course, I had the opportunity to develop an application for waste collection assistance in the city of Belo Horizonte. Throughout the development process, we conducted field research and received guidance from experts in the field."
+    },
+    "component2": {
+      "date": "August 13, 2020",
+      "h2": "My First Website 💻",
+      "p": "In 2020, I began my studies in programming. During my first exposure to this field, I took an HTML and CSS course offered by Microsoft in partnership with Junior Achievement. At the end of the course, there was a competition for the best-developed websites, and I reached the state-level phase."
+    },
+    "component3": {
+      "date": "December 15, 2020",
+      "h2": "High School Graduation 👨‍🎓",
+      "p": "In 2020, I graduated from high school at Colégio Espanhol Santa Maria. I had been studying at this school since the age of six, and I made many friendships that I still have today 😃😃"
+    },
+    "component4": {
+      "date": "May 17, 2021",
+      "h2": "Bachelor's in Information Systems 👨‍💻",
+      "p": "In 2021, I began my studies in Information Systems at the Federal University of Minas Gerais (UFMG). From the first semester, I fell in love with the university and the field of computing. I am currently in my sixth semester."
+    },
+    "component5": {
+      "date": "September 1, 2022",
+      "h2": "Undergraduate Research Project 🥼",
+      "p": "Since 2022, I have been working on a scientific research project offered by UFMG. The project involves collecting and structuring location data, including addresses and place names, creating and organizing databases with this content using PostgreSQL. I am developing functions to access and query textual identification data of places, using cataloged addresses and names. I am using Python and JavaScript to structure the API for address querying."
+    },
+    "component6": {
+      "date": "October 20, 2022",
+      "h2": "Acad Game 💪",
+      "p": "In 2022, I participated in the development of the Acad Game software. Acad Game is a gamified platform aimed at engaging people more in the process of going to the gym and making progress. I had the opportunity to be involved from the project's ideation to its development and testing. I mainly worked on the back-end in JavaScript and the MySQL database. More details about this software can be found on the projects page."
+    }
   }
 }
