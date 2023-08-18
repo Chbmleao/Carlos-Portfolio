@@ -4,13 +4,17 @@ import Footer from "../components/Footer";
 import HeroImg2 from "../components/HeroImg2";
 import Form from "../components/Form";
 
+import { useTranslation } from "react-i18next";
+
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <Navbar />
       <HeroImg2 heading="CONTATO" text="Fale comigo!" />
       <Form />
-      <Footer />
+      <Footer t={t} />
     </div>
   );
 };
