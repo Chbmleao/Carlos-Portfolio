@@ -3,6 +3,8 @@ import "../styles/FormStyles.css";
 import emailjs from "@emailjs/browser";
 import Popup from "./Popup";
 
+import { withTranslation } from "react-i18next";
+
 class Form extends Component {
   state = {
     userName: "",
@@ -49,11 +51,13 @@ class Form extends Component {
   };
 
   render() {
+    const { t } = this.props;
+
     return (
       <div className="form" id="contact">
-        <h1>Envie uma mensagem para mim!</h1>
+        <h1>{t("form.h1")}</h1>
         <form ref={this.formRef} onSubmit={this.sendEmail}>
-          <label>Seu nome</label>
+          <label>{t("form.name")}</label>
           <input
             className="text-box"
             type="text"
@@ -61,7 +65,7 @@ class Form extends Component {
             value={this.state.userName}
             onChange={this.handleInputChange}
           ></input>
-          <label>Email</label>
+          <label>{t("form.email")}</label>
           <input
             className="text-box"
             type="text"
@@ -69,7 +73,7 @@ class Form extends Component {
             value={this.state.userEmail}
             onChange={this.handleInputChange}
           ></input>
-          <label>Assunto</label>
+          <label>{t("form.subject")}</label>
           <input
             className="text-box"
             type="text"
@@ -77,16 +81,16 @@ class Form extends Component {
             value={this.state.subject}
             onChange={this.handleInputChange}
           ></input>
-          <label>Mensagem</label>
+          <label>{t("form.message")}</label>
           <textarea
             className="text-box"
             rows="6"
-            placeholder="Digite sua mensagem aqui!"
+            placeholder={t("form.messagePlaceholder")}
             name="message"
             value={this.state.message}
             onChange={this.handleInputChange}
           ></textarea>
-          <input className="btn" type="submit" value="Send" />
+          <input className="btn" type="submit" value={t("form.send")} />
         </form>
         <Popup ref={this.popupRef} />
       </div>
@@ -94,4 +98,4 @@ class Form extends Component {
   }
 }
 
-export default Form;
+export default withTranslation()(Form);
