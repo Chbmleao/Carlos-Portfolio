@@ -76,5 +76,14 @@
       "title": "Pathfinding Visualizer",
       "text": "This project provides an interface to visualize the functionality of various pathfinding algorithms on graphs. A pathfinding algorithm is constructed based on a graph search algorithm and explores routes between nodes, starting from a node and traversing relationships until the destination is reached. The project was developed in React and includes the DFS, BFS, and Dijkstra algorithms."
     }
+  },
+  "form": {
+    "h1": "Send me a message!",
+    "name": "Your name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "messagePlaceholder": "Type your message here!",
+    "send": "Send"
   }
 }
