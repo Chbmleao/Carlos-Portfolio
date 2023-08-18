@@ -86,5 +86,9 @@
     "message": "Mensagem",
     "messagePlaceholder": "Digite sua mensagem aqui!",
     "send": "Enviar"
+  },
+  "footer": {
+    "h4": "Sobre mim",
+    "p": "Sou Carlos Leão, estudante de Sistemas de Informação na Universidade Federal de Minas Gerais. Trabalho com iniciação cientifíca na área de geolocalização de endereços e lugares, utilizando Python e PostgreSQL. Aprendo rápido e sou auto didata. Sou apaixonado por tecnologia e meu principal é aprender cada vez mais, um pouco a cada dia."
   }
 }

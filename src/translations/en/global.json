@@ -86,5 +86,9 @@
     "message": "Message",
     "messagePlaceholder": "Type your message here!",
     "send": "Send"
+  },
+  "footer": {
+    "h4": "About Me",
+    "p": "I'm Carlos Leão, a student of Information Systems at the Federal University of Minas Gerais. I work on undergraduate project research in the field of geolocation of addresses and places, using Python and PostgreSQL. I learn quickly and am self-taught. I'm passionate about technology, and my main goal is to keep learning more every day, bit by bit."
   }
 }
