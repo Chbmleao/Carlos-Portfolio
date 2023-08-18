@@ -3,11 +3,15 @@ import "../styles/NavbarStyles.css";
 
 import React, { useState } from "react";
 import ScrollButton from "./ScrollButton";
+import LanguageSelector from "./LanguageSelector";
 
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 
+import { useTranslation } from "react-i18next";
+
 const Navbar = () => {
+  const { t } = useTranslation();
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
@@ -31,37 +35,40 @@ const Navbar = () => {
         <li>
           <ScrollButton
             sectionId="home"
-            sectionName="Home"
+            sectionName={t("navbar.home")}
             buttonType="navbar"
           />
         </li>
         <li>
           <ScrollButton
             sectionId="aboutme"
-            sectionName="Sobre"
+            sectionName={t("navbar.aboutme")}
             buttonType="navbar"
           />
         </li>
         <li>
           <ScrollButton
             sectionId="timeline"
-            sectionName="Experiência"
+            sectionName={t("navbar.timeline")}
             buttonType="navbar"
           />
         </li>
         <li>
           <ScrollButton
             sectionId="project"
-            sectionName="Projetos"
+            sectionName={t("navbar.project")}
             buttonType="navbar"
           />
         </li>
         <li>
           <ScrollButton
             sectionId="contact"
-            sectionName="Contato"
+            sectionName={t("navbar.contact")}
             buttonType="navbar"
           />
+        </li>
+        <li>
+          <LanguageSelector />
         </li>
       </ul>
       <div className="menu-icon" onClick={handleClick}>
