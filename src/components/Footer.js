@@ -9,7 +9,11 @@ import {
   FaPhone,
 } from "react-icons/fa";
 
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="footer">
       <div className="footer-container">
@@ -60,15 +64,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="right">
-          <h4>Sobre mim</h4>
-          <p>
-            Sou Carlos Leão, estudante de Sistemas de Informação na Universidade
-            Federal de Minas Gerais. Trabalho com iniciação cientifíca na área
-            de geolocalização de endereços e lugares, utilizando Python e
-            PostgreSQL. Aprendo rápido e sou auto didata. Sou apaixonado por
-            tecnologia e meu principal é aprender cada vez mais, um pouco a cada
-            dia.
-          </p>
+          <h4>{t("footer.h4")}</h4>
+          <p>{t("footer.p")}</p>
         </div>
       </div>
     </div>
