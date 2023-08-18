@@ -18,5 +18,11 @@
       "project": "PROJECTS",
       "contact": "CONTACT"
     }
+  },
+  "aboutme": {
+    "h1": "Hello!",
+    "h2": "My name is Carlos Leão",
+    "p1": "I am in the sixth semester of my Computer Science degree at the Federal University of Minas Gerais (UFMG). I have already participated in the development of a complete software called Acad Game, a gamified platform that aims to engage people more in the process of going to the gym and making progress. During this experience, I gained knowledge about teamwork, communication, back-end and front-end development, JavaScript, MySQL, testability, as well as independence and a willingness to learn new technologies and processes.",
+    "p2": "Additionally, I am involved in a scientific research project where I work with geolocation of addresses and places. We have developed functions to access and query textual identification data of places using cataloged addresses and names. For the creation and structuring of the database, we use PostgreSQL. Furthermore, Python and JavaScript are the languages used for developing the search interface."
   }
 }
