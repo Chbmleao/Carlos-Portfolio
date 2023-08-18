@@ -5,5 +5,18 @@
     "timeline": "Timeline",
     "project": "Projects",
     "contact": "Contact"
+  },
+  "home": {
+    "words": {
+      "front": "Front-end",
+      "back": "Back-end",
+      "data": "Database",
+      "dev": "Developer"
+    },
+    "content": {
+      "p": "HELLO, MY NAME IS CARLOS LEÃO",
+      "project": "PROJECTS",
+      "contact": "CONTACT"
+    }
   }
 }
