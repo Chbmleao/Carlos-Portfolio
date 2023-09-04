@@ -2,6 +2,7 @@ import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
 import project3 from "../assets/project3.png";
 import project4 from "../assets/project4.gif";
+import project5 from "../assets/project5.png";
 
 const ProjectCardData = [
   {
@@ -27,6 +28,10 @@ const ProjectCardData = [
     title: "Final Fantasy Remake",
     text: "Jogo desenvolvido em C juntamente com a biblioteca de desenvolvimento de jogos Allegro, durante meu primeiro contato com a linguagem, no primeiro semestre de 2021. O jogo é inspirado em jogos RPG, principalmente Final Fantasy e Pokemon. O projeto também apresenta uma documentação explicativa do código desenvolvido.",
     source: "https://github.com/Chbmleao/FinalFantasy-Remake",
+  },
+  {
+    imgsrc: project5,
+    source: "https://github.com/Chbmleao/InventoryControl-KeevoTec",
   },
 ];
 

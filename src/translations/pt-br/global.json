@@ -76,6 +76,10 @@
     "workData3": {
       "title": "Pathfinding Visualizer",
       "text": "Este projeto fornece uma interface para visualizar a funcionalidade de vários algoritmos de caminhamento em grafos. Um algoritmo de busca de caminho é construído com base em um algoritmo de busca de grafo e explora rotas entre nós, começando em um nó e percorrendo relacionamentos até que o destino seja alcançado. O projeto foi desenvolvido em React e contém os algoritmos DFS, BFS e Dijkstra."
+    },
+    "workData5": {
+      "title": "Controle de Estoque",
+      "text": "O Sistema de Controle de Estoque é uma aplicação robusta projetada para simplificar a gestão dos itens em estoque. Cada item no estoque é definido por atributos como identificador, descrição, quantidade e unidade de medida. Este sistema permite aos usuários criar novos itens, editar itens existentes e excluir itens, tudo isso garantindo uma entrada de dados livre de erros."
     }
   },
   "form": {

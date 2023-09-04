@@ -76,6 +76,10 @@
     "workData3": {
       "title": "Pathfinding Visualizer",
       "text": "This project provides an interface to visualize the functionality of various pathfinding algorithms on graphs. A pathfinding algorithm is constructed based on a graph search algorithm and explores routes between nodes, starting from a node and traversing relationships until the destination is reached. The project was developed in React and includes the DFS, BFS, and Dijkstra algorithms."
+    },
+    "workData5": {
+      "title": "Inventory Control",
+      "text": "The Inventory Control System is a robust application designed to streamline the management of inventory items. Each item in the inventory is defined by attributes such as an identifier, description, quantity, and measure unit. This system allows users to create new items, edit existing items, and delete items, all while ensuring error-free data input."
     }
   },
   "form": {
