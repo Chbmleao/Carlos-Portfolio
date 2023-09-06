@@ -33,7 +33,7 @@ const HeroImg = () => {
             <Cursor cursorStyle="|" />
           </span>
         </h1>
-        <div>
+        <div className="buttons">
           <ScrollButton
             buttonType="btn"
             sectionId="project"
