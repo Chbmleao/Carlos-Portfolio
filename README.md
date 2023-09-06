@@ -62,10 +62,10 @@
 
 ```shell
 # Clone this Repository
-git clone https://github.com/ViniciusResende/ViniciusPortfolio.git
+git clone https://github.com/Chbmleao/Carlos-Portfolio
 
-# Enter the poject folder in the Terminal
-cd ViniciusPortfolio
+# Navigate to poject folder
+cd Carlos-Portfolio
 
 # Install project dependencies
 npm install
