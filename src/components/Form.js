@@ -11,13 +11,20 @@ class Form extends Component {
     userEmail: "",
     subject: "",
     message: "",
+    errors: {
+      userName: "Username is required!",
+      userEmail: "Email is required!",
+    },
   };
 
   popupRef = React.createRef();
   formRef = React.createRef();
 
   handleInputChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
+    this.setState({ [e.target.name]: e.target.value }, () => {
+      this.validateErrors();
+      console.log(this.state);
+    });
   };
 
   resetInputValues = () => {
@@ -26,6 +33,10 @@ class Form extends Component {
       userEmail: "",
       subject: "",
       message: "",
+      errors: {
+        userName: "Username is required!",
+        userEmail: "Email is required!",
+      },
     });
   };
 
@@ -50,8 +61,32 @@ class Form extends Component {
       );
   };
 
+  validateErrors() {
+    const validationErrors = {};
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const isEmailValid = emailRegex.test(this.state.userEmail);
+
+    if (!this.state.userName.trim()) {
+      validationErrors.userName = "Username is required!";
+    }
+
+    if (!this.state.userEmail.trim()) {
+      validationErrors.userEmail = "Email is required!";
+    } else if (!isEmailValid) {
+      validationErrors.userEmail = "Email is not valid!";
+    }
+    console.log(validationErrors);
+
+    this.setState({ errors: validationErrors }, () => {
+      console.log(this.state.errors);
+    });
+  }
+
   render() {
     const { t } = this.props;
+
+    const hasErrors = Object.keys(this.state.errors).length > 0;
 
     return (
       <div className="form" id="contact">
@@ -90,7 +125,12 @@ class Form extends Component {
             value={this.state.message}
             onChange={this.handleInputChange}
           ></textarea>
-          <input className="btn" type="submit" value={t("form.send")} />
+          <input
+            className="btn"
+            type="submit"
+            value={t("form.send")}
+            disabled={hasErrors}
+          />
         </form>
         <Popup ref={this.popupRef} />
       </div>
