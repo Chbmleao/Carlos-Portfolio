@@ -23,7 +23,7 @@ const WorkCard = (props) => {
             {t("work.more")}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="icon"
+              className="icon"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
