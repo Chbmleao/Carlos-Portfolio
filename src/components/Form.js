@@ -12,8 +12,14 @@ class Form extends Component {
     subject: "",
     message: "",
     errors: {
-      userName: "Username is required!",
-      userEmail: "Email is required!",
+      userName: {
+        alreadyChanged: false,
+        message: "Username is required!",
+      },
+      userEmail: {
+        alreadyChanged: false,
+        message: "Email is required!",
+      },
     },
   };
 
@@ -22,8 +28,7 @@ class Form extends Component {
 
   handleInputChange = (e) => {
     this.setState({ [e.target.name]: e.target.value }, () => {
-      this.validateErrors();
-      console.log(this.state);
+      this.validateErrors(e.target.name);
     });
   };
 
@@ -34,8 +39,14 @@ class Form extends Component {
       subject: "",
       message: "",
       errors: {
-        userName: "Username is required!",
-        userEmail: "Email is required!",
+        userName: {
+          alreadyChanged: false,
+          message: "Username is required!",
+        },
+        userEmail: {
+          alreadyChanged: false,
+          message: "Email is required!",
+        },
       },
     });
   };
@@ -61,25 +72,44 @@ class Form extends Component {
       );
   };
 
-  validateErrors() {
-    const validationErrors = {};
+  validateErrors(inputId) {
+    const validationErrors = this.state.errors;
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const isEmailValid = emailRegex.test(this.state.userEmail);
 
-    if (!this.state.userName.trim()) {
-      validationErrors.userName = "Username is required!";
+    switch (inputId) {
+      case "userName":
+        if (!this.state.userName.trim()) {
+          validationErrors.userName = {
+            alreadyChanged: true,
+            message: "Username is required!",
+          };
+        } else {
+          validationErrors.userName = {};
+        }
+        break;
+      case "userEmail":
+        if (!this.state.userEmail.trim()) {
+          validationErrors.userEmail = {
+            alreadyChanged: true,
+            message: "Email is required!",
+          };
+        } else if (!isEmailValid) {
+          validationErrors.userEmail = {
+            alreadyChanged: true,
+            message: "Email is not valid!",
+          };
+        } else {
+          validationErrors.userEmail = {};
+        }
+        break;
+      default:
+        break;
     }
-
-    if (!this.state.userEmail.trim()) {
-      validationErrors.userEmail = "Email is required!";
-    } else if (!isEmailValid) {
-      validationErrors.userEmail = "Email is not valid!";
-    }
-    console.log(validationErrors);
 
     this.setState({ errors: validationErrors }, () => {
-      console.log(this.state.errors);
+      console.log(this.state);
     });
   }
 
@@ -99,7 +129,11 @@ class Form extends Component {
             name="userName"
             value={this.state.userName}
             onChange={this.handleInputChange}
+            onBlur={this.handleInputChange}
           ></input>
+          {this.state?.errors?.userName?.alreadyChanged && (
+            <div className="error">{this.state.errors.userName.message}</div>
+          )}
           <label>{t("form.email")}</label>
           <input
             className="text-box"
@@ -107,7 +141,11 @@ class Form extends Component {
             name="userEmail"
             value={this.state.userEmail}
             onChange={this.handleInputChange}
+            onBlur={this.handleInputChange}
           ></input>
+          {this.state?.errors?.userEmail?.alreadyChanged && (
+            <div className="error">{this.state.errors.userEmail.message}</div>
+          )}
           <label>{t("form.subject")}</label>
           <input
             className="text-box"
