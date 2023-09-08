@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import Popup from "./Popup";
 
 import { withTranslation } from "react-i18next";
+import i18n from "i18next";
 
 class Form extends Component {
   state = {
@@ -14,11 +15,11 @@ class Form extends Component {
     errors: {
       userName: {
         alreadyChanged: false,
-        message: "Username is required!",
+        message: i18n.t("form.errors.name.required"),
       },
       userEmail: {
         alreadyChanged: false,
-        message: "Email is required!",
+        message: i18n.t("form.errors.email.required"),
       },
     },
   };
@@ -41,11 +42,11 @@ class Form extends Component {
       errors: {
         userName: {
           alreadyChanged: false,
-          message: "Username is required!",
+          message: i18n.t("form.errors.name.required"),
         },
         userEmail: {
           alreadyChanged: false,
-          message: "Email is required!",
+          message: i18n.t("form.errors.email.required"),
         },
       },
     });
@@ -83,7 +84,7 @@ class Form extends Component {
         if (!this.state.userName.trim()) {
           validationErrors.userName = {
             alreadyChanged: true,
-            message: "Username is required!",
+            message: i18n.t("form.errors.name.required"),
           };
         } else {
           validationErrors.userName = {};
@@ -93,12 +94,12 @@ class Form extends Component {
         if (!this.state.userEmail.trim()) {
           validationErrors.userEmail = {
             alreadyChanged: true,
-            message: "Email is required!",
+            message: i18n.t("form.errors.email.required"),
           };
         } else if (!isEmailValid) {
           validationErrors.userEmail = {
             alreadyChanged: true,
-            message: "Email is not valid!",
+            message: i18n.t("form.errors.email.invalid"),
           };
         } else {
           validationErrors.userEmail = {};

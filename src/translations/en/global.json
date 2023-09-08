@@ -89,7 +89,16 @@
     "subject": "Subject",
     "message": "Message",
     "messagePlaceholder": "Type your message here!",
-    "send": "Send"
+    "send": "Send",
+    "errors": {
+      "name": {
+        "required": "Please fill out the name field."
+      },
+      "email": {
+        "required": "Please fill out the email field.",
+        "invalid": "Invalid email address. The expected format is 'example@email.com'."
+      }
+    }
   },
   "footer": {
     "h4": "About Me",

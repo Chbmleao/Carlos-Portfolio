@@ -89,7 +89,16 @@
     "subject": "Assunto",
     "message": "Mensagem",
     "messagePlaceholder": "Digite sua mensagem aqui!",
-    "send": "Enviar"
+    "send": "Enviar",
+    "errors": {
+      "name": {
+        "required": "Por favor, preencha o campo de nome."
+      },
+      "email": {
+        "required": "Por favor, preencha o campo de email.",
+        "invalid": "Endereço de e-mail inválido. O formato esperado é 'exemplo@email.com'."
+      }
+    }
   },
   "footer": {
     "h4": "Sobre mim",
