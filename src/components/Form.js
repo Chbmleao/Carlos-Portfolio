@@ -114,10 +114,17 @@ class Form extends Component {
     });
   }
 
+  hasErrors() {
+    const hasNameErrors = Object.keys(this.state.errors.userEmail).length > 0;
+    const hasEmailErrors = Object.keys(this.state.errors.userEmail).length > 0;
+
+    return hasNameErrors || hasEmailErrors;
+  }
+
   render() {
     const { t } = this.props;
 
-    const hasErrors = Object.keys(this.state.errors).length > 0;
+    const hasErrors = this.hasErrors();
 
     return (
       <div className="form" id="contact">
