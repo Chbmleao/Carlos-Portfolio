@@ -32,11 +32,11 @@
 
 ### Desktop Layout
 
-<img alt="Project desktop layout" src="https://res.cloudinary.com/da5qarus6/image/upload/v1694023972/portfolio-desktop_4_hthc3w.gif">
+<img alt="Project desktop layout" src="./docs/desktop-layout.gif">
 
 ### Mobile Layout
 
-<img alt="Project mobile layout" src="https://res.cloudinary.com/da5qarus6/image/upload/v1694022584/portfolio-mobile.gif" width=250px>
+<img alt="Project mobile layout" src="./docs/mobile-layout.gif" width=250px>
 
 ## Getting Started
 
